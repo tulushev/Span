@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311B5D381CC5D3270079AB6F /* Akkurat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 311B5D351CC5D3270079AB6F /* Akkurat.ttf */; };
+		311B5D391CC5D3270079AB6F /* WorkSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 311B5D361CC5D3270079AB6F /* WorkSans-Bold.otf */; };
+		311B5D3A1CC5D3270079AB6F /* WorkSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 311B5D371CC5D3270079AB6F /* WorkSans-Regular.otf */; };
 		311E895B1CBBB861004C1831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 311E895A1CBBB861004C1831 /* main.m */; };
 		311E895E1CBBB861004C1831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 311E895D1CBBB861004C1831 /* AppDelegate.m */; };
 		311E89661CBBB861004C1831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311E89651CBBB861004C1831 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		0530052DD318724733FA78F7 /* Pods-Span.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Span.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Span/Pods-Span.debug.xcconfig"; sourceTree = "<group>"; };
+		311B5D351CC5D3270079AB6F /* Akkurat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Akkurat.ttf; sourceTree = "<group>"; };
+		311B5D361CC5D3270079AB6F /* WorkSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.otf"; sourceTree = "<group>"; };
+		311B5D371CC5D3270079AB6F /* WorkSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.otf"; sourceTree = "<group>"; };
 		311E89561CBBB861004C1831 /* Span.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Span.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		311E895A1CBBB861004C1831 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		311E895C1CBBB861004C1831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +74,9 @@
 				311E895D1CBBB861004C1831 /* AppDelegate.m */,
 				311E89781CBBCB4F004C1831 /* IntroViewController.h */,
 				311E89791CBBCB4F004C1831 /* IntroViewController.m */,
+				311B5D351CC5D3270079AB6F /* Akkurat.ttf */,
+				311B5D361CC5D3270079AB6F /* WorkSans-Bold.otf */,
+				311B5D371CC5D3270079AB6F /* WorkSans-Regular.otf */,
 				311E89731CBBCB3C004C1831 /* ImageViewController.h */,
 				311E89741CBBCB3C004C1831 /* ImageViewController.m */,
 				311E89651CBBB861004C1831 /* Assets.xcassets */,
@@ -163,7 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311B5D381CC5D3270079AB6F /* Akkurat.ttf in Resources */,
 				311E89661CBBB861004C1831 /* Assets.xcassets in Resources */,
+				311B5D3A1CC5D3270079AB6F /* WorkSans-Regular.otf in Resources */,
+				311B5D391CC5D3270079AB6F /* WorkSans-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
