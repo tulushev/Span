@@ -7,16 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "Constants.h"
 #import "ImageViewController.h"
 #import "IntroViewController.h"
-
-
-NSString * const SkipIntro = @"SkipIntro";
-
-
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
@@ -25,20 +18,17 @@ NSString * const SkipIntro = @"SkipIntro";
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    ImageViewController *imageViewController = [[ImageViewController alloc] init];
+    self.window.rootViewController = imageViewController;
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults registerDefaults:@{SkipIntro : @NO}];
     BOOL skipIntro = [(NSNumber *)[defaults valueForKey:SkipIntro] boolValue];
     
-    if (skipIntro) {
-        ImageViewController *imageViewController = [[ImageViewController alloc] init];
-        self.window.rootViewController = imageViewController;
-    } else {
-        IntroViewController *introViewController = [[IntroViewController alloc] init];
-        self.window.rootViewController = introViewController;
+    if (!skipIntro) {
+        imageViewController.withIntro = YES;
     }
     
     [self.window makeKeyAndVisible];
-    
     
     return YES;
 }

@@ -15,6 +15,7 @@
 		311E89661CBBB861004C1831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 311E89651CBBB861004C1831 /* Assets.xcassets */; };
 		311E89761CBBCB3C004C1831 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311E89741CBBCB3C004C1831 /* ImageViewController.m */; };
 		311E897B1CBBCB4F004C1831 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 311E89791CBBCB4F004C1831 /* IntroViewController.m */; };
+		3147DBAF1CC7685500D70E8C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3147DBAE1CC7685500D70E8C /* Constants.m */; };
 		3D67713808EF13ECA29002AD /* libPods-Span.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9499C17AAEAC6DBE8A5655B2 /* libPods-Span.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		311E89741CBBCB3C004C1831 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		311E89781CBBCB4F004C1831 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
 		311E89791CBBCB4F004C1831 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		3147DBAD1CC7685500D70E8C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		3147DBAE1CC7685500D70E8C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		9499C17AAEAC6DBE8A5655B2 /* libPods-Span.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Span.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DABA4C45417C7092573759 /* Pods-Span.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Span.release.xcconfig"; path = "Pods/Target Support Files/Pods-Span/Pods-Span.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,13 +73,12 @@
 		311E89581CBBB861004C1831 /* Span */ = {
 			isa = PBXGroup;
 			children = (
+				3147DBAD1CC7685500D70E8C /* Constants.h */,
+				3147DBAE1CC7685500D70E8C /* Constants.m */,
 				311E895C1CBBB861004C1831 /* AppDelegate.h */,
 				311E895D1CBBB861004C1831 /* AppDelegate.m */,
 				311E89781CBBCB4F004C1831 /* IntroViewController.h */,
 				311E89791CBBCB4F004C1831 /* IntroViewController.m */,
-				311B5D351CC5D3270079AB6F /* Akkurat.ttf */,
-				311B5D361CC5D3270079AB6F /* WorkSans-Bold.otf */,
-				311B5D371CC5D3270079AB6F /* WorkSans-Regular.otf */,
 				311E89731CBBCB3C004C1831 /* ImageViewController.h */,
 				311E89741CBBCB3C004C1831 /* ImageViewController.m */,
 				311E89651CBBB861004C1831 /* Assets.xcassets */,
@@ -89,6 +91,9 @@
 		311E89591CBBB861004C1831 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				311B5D351CC5D3270079AB6F /* Akkurat.ttf */,
+				311B5D361CC5D3270079AB6F /* WorkSans-Bold.otf */,
+				311B5D371CC5D3270079AB6F /* WorkSans-Regular.otf */,
 				311E895A1CBBB861004C1831 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3147DBAF1CC7685500D70E8C /* Constants.m in Sources */,
 				311E89761CBBCB3C004C1831 /* ImageViewController.m in Sources */,
 				311E895E1CBBB861004C1831 /* AppDelegate.m in Sources */,
 				311E895B1CBBB861004C1831 /* main.m in Sources */,

@@ -10,4 +10,6 @@
 
 @interface ImageViewController : UIViewController
 
+@property (nonatomic) BOOL withIntro;
+
 @end

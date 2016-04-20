@@ -6,6 +6,7 @@
 //  Copyright © 2016 Eugene Tulushev. All rights reserved.
 //
 
+#import "Constants.h"
 #import "IntroViewController.h"
 
 
@@ -85,6 +86,7 @@ NSString * const ThirdText = @"What is the final state of a change?\nWhen to sto
     self.button.center = CGPointMake(self.view.center.x + viewSize.width * 2.0, (CGFloat)round(viewSize.height * buttonFactorHeight));
     [self.button setImage:buttonImage
                  forState:UIControlStateNormal];
+    [self.button addTarget:self action:@selector(agreed) forControlEvents:UIControlEventTouchDown];
     [self.scrollView addSubview:self.button];
     
     CGFloat pageControlFactorHeight = 0.74;
@@ -139,6 +141,12 @@ NSString * const ThirdText = @"What is the final state of a change?\nWhen to sto
     CGFloat fractionalPage = self.scrollView.contentOffset.x / pageWidth;
     NSInteger page = lround(fractionalPage);
     self.pageControl.currentPage = page;
+}
+
+- (void)agreed {
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[NSUserDefaults standardUserDefaults] setObject:@YES forKey:SkipIntro];
+    }];
 }
 
 @end
