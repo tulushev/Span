@@ -6,6 +6,7 @@
 //  Copyright © 2016 Eugene Tulushev. All rights reserved.
 //
 
+#import "Constants.h"
 #import "ImageViewController.h"
 #import "IntroViewController.h"
 @import MobileCoreServices;
@@ -29,10 +30,9 @@ NSString * const PhotoPath = @"photo.png";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    CGFloat greyComponent = 38.0 / 255.0;
-    UIColor *backgroundColor = [UIColor colorWithRed:greyComponent
-                                               green:greyComponent
-                                                blue:greyComponent
+    UIColor *backgroundColor = [UIColor colorWithRed:RedComponent
+                                               green:GreenComponent
+                                                blue:BlueComponent
                                                alpha:1.0];
     self.view.backgroundColor = backgroundColor;
     

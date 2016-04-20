@@ -11,7 +11,8 @@
 
 
 NSString * const LogoImageName = @"Logo-walkthrough";
-NSString * const ShapeImageName = @"Illustration-Walkthrough";
+NSString * const ShapeFirstImageName = @"Illustration-Walkthrough2";
+NSString * const ShapeSecondImageName = @"Illustration-Walkthrough3";
 NSString * const ButtonImageName = @"Button-Agree";
 
 NSString * const FontNameAkkurat = @"Akkurat";
@@ -48,10 +49,9 @@ NSString * const ThirdText = @"What is the final state of a change?\nWhen to sto
     
     CGSize viewSize = self.view.bounds.size;
     
-    CGFloat greyComponent = 38.0 / 255.0;
-    UIColor *backgroundColor = [UIColor colorWithRed:greyComponent
-                                               green:greyComponent
-                                                blue:greyComponent
+    UIColor *backgroundColor = [UIColor colorWithRed:RedComponent
+                                               green:GreenComponent
+                                                blue:BlueComponent
                                                alpha:1.0];
     self.view.backgroundColor = backgroundColor;
     
@@ -69,13 +69,14 @@ NSString * const ThirdText = @"What is the final state of a change?\nWhen to sto
     self.logo.center = CGPointMake(self.view.center.x, (CGFloat)round(viewSize.height * logoFactorHeight));
     [self.scrollView addSubview:self.logo];
     
-    UIImage *shapesImage = [UIImage imageNamed:ShapeImageName];
+    UIImage *shapesFirstImage = [UIImage imageNamed:ShapeFirstImageName];
+    UIImage *shapesSecondImage = [UIImage imageNamed:ShapeSecondImageName];
     CGFloat shapesFactorHeight = 0.2;
-    self.shapesFirst = [[UIImageView alloc] initWithImage:shapesImage];
+    self.shapesFirst = [[UIImageView alloc] initWithImage:shapesFirstImage];
     CGFloat shapesHorizontalCenter = (CGFloat)round(viewSize.height * shapesFactorHeight);
     self.shapesFirst.center = CGPointMake(self.view.center.x + viewSize.width, shapesHorizontalCenter);
     [self.scrollView addSubview:self.shapesFirst];
-    self.shapesSecond = [[UIImageView alloc] initWithImage:shapesImage];
+    self.shapesSecond = [[UIImageView alloc] initWithImage:shapesSecondImage];
     self.shapesSecond.center = CGPointMake(self.view.center.x + viewSize.width * 2.0, shapesHorizontalCenter);
     [self.scrollView addSubview:self.shapesSecond];
     

@@ -12,4 +12,8 @@
 
 NSString * const SkipIntro = @"SkipIntro";
 
+CGFloat RedComponent = 16.0 / 255.0;
+CGFloat GreenComponent = 11.0 / 255.0;
+CGFloat BlueComponent = 51.0 / 255.0;
+
 @end
