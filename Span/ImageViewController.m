@@ -15,6 +15,7 @@
 NSString * const LogoSmallImageName = @"Logo_small";
 NSString * const ButtonStopImageName = @"Button_Stop";
 NSString * const PhotoPath = @"photo.png";
+NSString * const GlitchDateKey = @"GlitchDate";
 
 @interface ImageViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -157,6 +158,7 @@ NSString * const PhotoPath = @"photo.png";
 - (void)loadPhoto {
     NSData *imageData = [NSData dataWithContentsOfURL:[self saveLocation]];
     self.photo = [UIImage imageWithData:imageData];
+    [self checkAndGlitchIfNeeded];
 }
 
 - (void)savePhoto {
@@ -206,17 +208,60 @@ NSString * const PhotoPath = @"photo.png";
     }
 }
 
+#pragma mark - Glitch
+
+- (BOOL)shouldWeGlitch:(NSDate *)lastGlitchDate {
+    if (!lastGlitchDate) {
+        return NO;
+    }
+    
+    NSUInteger days = 3;
+    NSUInteger hours = 0;
+    NSUInteger minutes = 0;
+    NSUInteger seconds = 0;
+    NSTimeInterval glitchTimeInterval = seconds + minutes * 60 + hours * 60 * 60 + days * 24 * 60 * 60;
+    
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:lastGlitchDate];
+    if (timeInterval >= glitchTimeInterval) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 - (UIImage *)glitchPhoto:(UIImage *)photo {
-    return [photo glitchWithBlock:^int(int byte, int index, uint length, Byte *bytes) {
+    UIImage *glitchedPhoto = [photo glitchWithBlock:^int(int byte, int index, uint length, Byte *bytes) {
         NSUInteger numberOfGlitches = 6;
         NSUInteger rate = length / numberOfGlitches;
         if (arc4random() % rate == 1) {
             NSLog(@"Glitched byte: %d index: %d length: %d", byte, index, length);
-            return arc4random() % 256;
+            return 37 + arc4random() % 10;
         } else {
             return byte;
         }
     }];
+    [self saveGlitchDate];
+    return glitchedPhoto;
+}
+
+- (NSDate *)lastGlitchDate {
+    return [[NSUserDefaults standardUserDefaults] valueForKey:GlitchDateKey];
+}
+
+- (void)saveGlitchDate {
+    [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:GlitchDateKey];
+}
+
+- (void)checkAndGlitchIfNeeded {
+    if (self.photo) {
+        NSDate *lastGlitchDate = [self lastGlitchDate];
+        BOOL shouldWeGlitch = [self shouldWeGlitch:lastGlitchDate];
+        if (shouldWeGlitch) {
+            self.photo = [self glitchPhoto:self.photo];
+            [self.buttonPhoto setImage:self.photo forState:UIControlStateNormal];
+            [self savePhoto];
+        }
+    }
 }
 
 #pragma mark - Image Picker
@@ -224,6 +269,7 @@ NSString * const PhotoPath = @"photo.png";
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     self.photo = [self glitchPhoto:[info valueForKey:UIImagePickerControllerEditedImage]];
     [self savePhoto];
+    [self saveGlitchDate];
     [self addButtonImageTarget:NO];
     [self addButtonExportTarget:YES];
     [self.buttonPhoto setImage:self.photo forState:UIControlStateNormal];

@@ -12,4 +12,6 @@
 
 @property (nonatomic) BOOL withIntro;
 
+- (void)checkAndGlitchIfNeeded;
+
 @end
