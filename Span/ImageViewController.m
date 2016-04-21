@@ -258,7 +258,7 @@ NSString * const GlitchDateKey = @"GlitchDate";
         BOOL shouldWeGlitch = [self shouldWeGlitch:lastGlitchDate];
         if (shouldWeGlitch) {
             self.photo = [self glitchPhoto:self.photo];
-            [self.buttonPhoto setImage:self.photo forState:UIControlStateNormal];
+            self.buttonPhoto.imageView.image = self.photo;
             [self savePhoto];
         }
     }
