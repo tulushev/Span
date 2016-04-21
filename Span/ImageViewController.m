@@ -7,6 +7,7 @@
 //
 
 #import "Constants.h"
+#import <GlitchKit/UIImage+GKGlitch.h>
 #import "ImageViewController.h"
 #import "IntroViewController.h"
 @import MobileCoreServices;
@@ -54,10 +55,8 @@ NSString * const PhotoPath = @"photo.png";
     
     UIImage *buttonImage = [UIImage imageNamed:ButtonStopImageName];
     self.buttonExport = [UIButton buttonWithType:UIButtonTypeCustom];
-    if (self.photo == nil) {
-        [self addButtonExportTarget:NO];
-    } else {
-        [self addButtonImageTarget:YES];
+    if (self.photo != nil) {
+        [self addButtonExportTarget:YES];
     }
     [self.buttonExport setImage:buttonImage
                  forState:UIControlStateNormal];
@@ -199,6 +198,7 @@ NSString * const PhotoPath = @"photo.png";
 
 - (void)exportToCameraRoll {
     if (self.photo) {
+        [self addButtonImageTarget:NO];
         [self addButtonExportTarget:NO];
         UIImageWriteToSavedPhotosAlbum(self.photo, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
     } else {
@@ -206,10 +206,23 @@ NSString * const PhotoPath = @"photo.png";
     }
 }
 
+- (UIImage *)glitchPhoto:(UIImage *)photo {
+    return [photo glitchWithBlock:^int(int byte, int index, uint length, Byte *bytes) {
+        NSUInteger numberOfGlitches = 6;
+        NSUInteger rate = length / numberOfGlitches;
+        if (arc4random() % rate == 1) {
+            NSLog(@"Glitched byte: %d index: %d length: %d", byte, index, length);
+            return arc4random() % 256;
+        } else {
+            return byte;
+        }
+    }];
+}
+
 #pragma mark - Image Picker
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
-    self.photo = [info valueForKey:UIImagePickerControllerEditedImage];
+    self.photo = [self glitchPhoto:[info valueForKey:UIImagePickerControllerEditedImage]];
     [self savePhoto];
     [self addButtonImageTarget:NO];
     [self addButtonExportTarget:YES];

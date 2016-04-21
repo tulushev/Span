@@ -7,42 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C44419BA5806D98A05CEEEDF82E417 /* Pods-Span-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406E344E5CC3F3C0CE954A3B79FA1BA /* Pods-Span-dummy.m */; };
-		DF08E9CFC43D1469DE84C91E2ABDE81A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		0B93431613D5C487CFD10CD12D513EBF /* GlitchKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A081C9CD707AABD198E5CADA4D0F5762 /* GlitchKit-dummy.m */; };
+		27D29A1B9E0209BAD58CDEE69CB5ED72 /* Pods-Span-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1406E344E5CC3F3C0CE954A3B79FA1BA /* Pods-Span-dummy.m */; };
+		6728CDD5E51C6B230579B646B54642F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		88EAB05F9EAD4C960A57275A7C4AD127 /* UIImage+GKGlitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BFA3050E2A6BC774030A7F6807A063 /* UIImage+GKGlitch.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		90F87307FDD5409DF94A430405758020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		9CB1856812C580031EE1D1C9694A8C52 /* UIImageView+GKGlitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF38382AFFF0872E887F961F3D78866 /* UIImageView+GKGlitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79988ACA90B537777F03B857EF5BA34 /* UIImage+GKGlitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC4E23A3B946099E0EFDF59AB9FDC9A /* UIImage+GKGlitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8187338ADE6DD6D79B5D28906A2C31B /* UIImageView+GKGlitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FA27B0E038AED0698AC3E2FE6D8B3A /* UIImageView+GKGlitch.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F41F7C22DC680B289AAC308C5A090397 /* GlitchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DFEB6535B2851E9F0DD5E69CCDB5B5E4 /* GlitchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01DA027FFF3AF150C6D236C3A66954E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 875015F6071F8A8F7AC9BF1E509AA5A8;
+			remoteInfo = GlitchKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		12DFEEB3509D877B6CE65BCE2EEB0562 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
+		07BFA3050E2A6BC774030A7F6807A063 /* UIImage+GKGlitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GKGlitch.m"; path = "GlitchKit/UIImage+GKGlitch.m"; sourceTree = "<group>"; };
 		1406E344E5CC3F3C0CE954A3B79FA1BA /* Pods-Span-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Span-dummy.m"; sourceTree = "<group>"; };
-		2DAC231E230D0D6DE6EE266BBF652390 /* libPods-Span.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Span.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3697C4B1EFB536214B182173F89AD4E7 /* libGlitchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGlitchKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C5810D41FE68B23611EA5F467AC3AF /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "Reveal-Framework-iOS-1.6.2/Reveal.framework"; sourceTree = "<group>"; };
 		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		47E2E99B6D6E2AE9F1A863D4E5C16023 /* Pods-Span-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Span-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A26BDBE91B3CC0542AD620A6B78834E /* GlitchKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GlitchKit-prefix.pch"; sourceTree = "<group>"; };
 		70DFB0F6BE6F0C9E81B04946FE32F4F9 /* Pods-Span.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Span.debug.xcconfig"; sourceTree = "<group>"; };
+		763ACA818430FF4E2EF533A6F141FC7A /* libPods-Span.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Span.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF38382AFFF0872E887F961F3D78866 /* UIImageView+GKGlitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+GKGlitch.h"; path = "GlitchKit/UIImageView+GKGlitch.h"; sourceTree = "<group>"; };
+		8AC4E23A3B946099E0EFDF59AB9FDC9A /* UIImage+GKGlitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GKGlitch.h"; path = "GlitchKit/UIImage+GKGlitch.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		989322C219D1E4AEE7982331C1F17918 /* Pods-Span-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Span-resources.sh"; sourceTree = "<group>"; };
+		A081C9CD707AABD198E5CADA4D0F5762 /* GlitchKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GlitchKit-dummy.m"; sourceTree = "<group>"; };
 		AFF295387689EA58B1CAB9C3C6E42CA4 /* Pods-Span-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Span-frameworks.sh"; sourceTree = "<group>"; };
+		B4FA27B0E038AED0698AC3E2FE6D8B3A /* UIImageView+GKGlitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+GKGlitch.m"; path = "GlitchKit/UIImageView+GKGlitch.m"; sourceTree = "<group>"; };
 		D120EABC77B4554343D9E27ECC83E113 /* Pods-Span-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Span-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCCF50912A6BDD19AC09B6035E63EAC3 /* GlitchKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GlitchKit.xcconfig; sourceTree = "<group>"; };
+		DFEB6535B2851E9F0DD5E69CCDB5B5E4 /* GlitchKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GlitchKit.h; path = GlitchKit/GlitchKit.h; sourceTree = "<group>"; };
 		F336B0F23327035D02A657F9049F6953 /* Pods-Span.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Span.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B9D85A1B7D3FE00D95724C8E42F3C3E /* Frameworks */ = {
+		6DA402675E4D6712C5459EEFED1EB906 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF08E9CFC43D1469DE84C91E2ABDE81A /* Foundation.framework in Frameworks */,
+				6728CDD5E51C6B230579B646B54642F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B8D033EEE3F6F3F7A077BB731E614C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90F87307FDD5409DF94A430405758020 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		030EE80F6FC68C2D0A17CF592EC8F06D /* Products */ = {
+		052D0A99E3B65F19A82F8A148A83EB42 /* Reveal-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				2DAC231E230D0D6DE6EE266BBF652390 /* libPods-Span.a */,
+				90A52AE632FCAA217794D67B27C9CB13 /* Frameworks */,
 			);
-			name = Products;
+			path = "Reveal-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		07F1FC2A57392F62CABD2EFBB0AC9882 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCCF50912A6BDD19AC09B6035E63EAC3 /* GlitchKit.xcconfig */,
+				A081C9CD707AABD198E5CADA4D0F5762 /* GlitchKit-dummy.m */,
+				6A26BDBE91B3CC0542AD620A6B78834E /* GlitchKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GlitchKit";
 			sourceTree = "<group>";
 		};
 		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
@@ -68,21 +113,52 @@
 			path = "Target Support Files/Pods-Span";
 			sourceTree = "<group>";
 		};
+		3487D6FFE947A3299285051E256B9345 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6982403C2EF869E65D200E0598923519 /* GlitchKit */,
+				052D0A99E3B65F19A82F8A148A83EB42 /* Reveal-iOS-SDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6982403C2EF869E65D200E0598923519 /* GlitchKit */ = {
+			isa = PBXGroup;
+			children = (
+				DFEB6535B2851E9F0DD5E69CCDB5B5E4 /* GlitchKit.h */,
+				8AC4E23A3B946099E0EFDF59AB9FDC9A /* UIImage+GKGlitch.h */,
+				07BFA3050E2A6BC774030A7F6807A063 /* UIImage+GKGlitch.m */,
+				7EF38382AFFF0872E887F961F3D78866 /* UIImageView+GKGlitch.h */,
+				B4FA27B0E038AED0698AC3E2FE6D8B3A /* UIImageView+GKGlitch.m */,
+				07F1FC2A57392F62CABD2EFBB0AC9882 /* Support Files */,
+			);
+			path = GlitchKit;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C6FF86527080A6ABFC16B69A3DC0DFFB /* Pods */,
-				030EE80F6FC68C2D0A17CF592EC8F06D /* Products */,
+				3487D6FFE947A3299285051E256B9345 /* Pods */,
+				8B4A13D1BF56964DF384A772B8109192 /* Products */,
 				CE50FAB0E9F85C713763019A39D37C5F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		81C689C3AFC1C7FF242CFAB8DDD09E4A /* Frameworks */ = {
+		8B4A13D1BF56964DF384A772B8109192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12DFEEB3509D877B6CE65BCE2EEB0562 /* Reveal.framework */,
+				3697C4B1EFB536214B182173F89AD4E7 /* libGlitchKit.a */,
+				763ACA818430FF4E2EF533A6F141FC7A /* libPods-Span.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90A52AE632FCAA217794D67B27C9CB13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C5810D41FE68B23611EA5F467AC3AF /* Reveal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,14 +171,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C6FF86527080A6ABFC16B69A3DC0DFFB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D70BEE20B57C04A4512260E625802768 /* Reveal-iOS-SDK */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		CE50FAB0E9F85C713763019A39D37C5F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,31 +179,54 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D70BEE20B57C04A4512260E625802768 /* Reveal-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				81C689C3AFC1C7FF242CFAB8DDD09E4A /* Frameworks */,
-			);
-			path = "Reveal-iOS-SDK";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		373D43AF355DB4FCA924AA6DBF54926F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41F7C22DC680B289AAC308C5A090397 /* GlitchKit.h in Headers */,
+				A79988ACA90B537777F03B857EF5BA34 /* UIImage+GKGlitch.h in Headers */,
+				9CB1856812C580031EE1D1C9694A8C52 /* UIImageView+GKGlitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		4435CDAF3B810A4628AFDB0A3F5E6249 /* Pods-Span */ = {
+		875015F6071F8A8F7AC9BF1E509AA5A8 /* GlitchKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CD932DC25EADAB16B8E2548EE87E049 /* Build configuration list for PBXNativeTarget "Pods-Span" */;
+			buildConfigurationList = CCEA8F45A24EA7E999C153D972DB2B07 /* Build configuration list for PBXNativeTarget "GlitchKit" */;
 			buildPhases = (
-				3A1563D348DA7E15B220FACC78B8FA2E /* Sources */,
-				7B9D85A1B7D3FE00D95724C8E42F3C3E /* Frameworks */,
+				515FF131A7189150414C122BF2EDCE71 /* Sources */,
+				F9B8D033EEE3F6F3F7A077BB731E614C /* Frameworks */,
+				373D43AF355DB4FCA924AA6DBF54926F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = GlitchKit;
+			productName = GlitchKit;
+			productReference = 3697C4B1EFB536214B182173F89AD4E7 /* libGlitchKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C14C3B288AF7420A10926C2E58A23C31 /* Pods-Span */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2945856F8A638A0513051744A2A22BC9 /* Build configuration list for PBXNativeTarget "Pods-Span" */;
+			buildPhases = (
+				FBE3C9F59C2F16228E52885CB6754D9D /* Sources */,
+				6DA402675E4D6712C5459EEFED1EB906 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C441364FDED5A00F788F115998E2ADE /* PBXTargetDependency */,
+			);
 			name = "Pods-Span";
 			productName = "Pods-Span";
-			productReference = 2DAC231E230D0D6DE6EE266BBF652390 /* libPods-Span.a */;
+			productReference = 763ACA818430FF4E2EF533A6F141FC7A /* libPods-Span.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -155,27 +246,89 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 030EE80F6FC68C2D0A17CF592EC8F06D /* Products */;
+			productRefGroup = 8B4A13D1BF56964DF384A772B8109192 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4435CDAF3B810A4628AFDB0A3F5E6249 /* Pods-Span */,
+				875015F6071F8A8F7AC9BF1E509AA5A8 /* GlitchKit */,
+				C14C3B288AF7420A10926C2E58A23C31 /* Pods-Span */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A1563D348DA7E15B220FACC78B8FA2E /* Sources */ = {
+		515FF131A7189150414C122BF2EDCE71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C44419BA5806D98A05CEEEDF82E417 /* Pods-Span-dummy.m in Sources */,
+				0B93431613D5C487CFD10CD12D513EBF /* GlitchKit-dummy.m in Sources */,
+				88EAB05F9EAD4C960A57275A7C4AD127 /* UIImage+GKGlitch.m in Sources */,
+				A8187338ADE6DD6D79B5D28906A2C31B /* UIImageView+GKGlitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE3C9F59C2F16228E52885CB6754D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D29A1B9E0209BAD58CDEE69CB5ED72 /* Pods-Span-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2C441364FDED5A00F788F115998E2ADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GlitchKit;
+			target = 875015F6071F8A8F7AC9BF1E509AA5A8 /* GlitchKit */;
+			targetProxy = 01DA027FFF3AF150C6D236C3A66954E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0DA54ADCDC3C8F76D8F64B8165BFE1FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCCF50912A6BDD19AC09B6035E63EAC3 /* GlitchKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GlitchKit/GlitchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		29368A250264E95C06E005A25299BA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F336B0F23327035D02A657F9049F6953 /* Pods-Span.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		2C442C92732ADBDBFA54CF4EA7B71CDF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -213,28 +366,28 @@
 			};
 			name = Release;
 		};
-		83914BD69E0A3049E1E1C778889389C8 /* Release */ = {
+		77724454FAE79C3B8BA1639803EE02F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F336B0F23327035D02A657F9049F6953 /* Pods-Span.release.xcconfig */;
+			baseConfigurationReference = DCCF50912A6BDD19AC09B6035E63EAC3 /* GlitchKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GlitchKit/GlitchKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		D58DDDA7B37E182D83DDBCF073EF5742 /* Debug */ = {
+		BFF6201FC70B16F2994688A703DEA355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 70DFB0F6BE6F0C9E81B04946FE32F4F9 /* Pods-Span.debug.xcconfig */;
 			buildSettings = {
@@ -299,6 +452,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2945856F8A638A0513051744A2A22BC9 /* Build configuration list for PBXNativeTarget "Pods-Span" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6201FC70B16F2994688A703DEA355 /* Debug */,
+				29368A250264E95C06E005A25299BA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -308,11 +470,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CD932DC25EADAB16B8E2548EE87E049 /* Build configuration list for PBXNativeTarget "Pods-Span" */ = {
+		CCEA8F45A24EA7E999C153D972DB2B07 /* Build configuration list for PBXNativeTarget "GlitchKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D58DDDA7B37E182D83DDBCF073EF5742 /* Debug */,
-				83914BD69E0A3049E1E1C778889389C8 /* Release */,
+				77724454FAE79C3B8BA1639803EE02F0 /* Debug */,
+				0DA54ADCDC3C8F76D8F64B8165BFE1FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

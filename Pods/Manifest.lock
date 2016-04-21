@@ -1,12 +1,15 @@
 PODS:
+  - GlitchKit (0.0.3)
   - Reveal-iOS-SDK (1.6.2)
 
 DEPENDENCIES:
+  - GlitchKit
   - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
+  GlitchKit: 2b94c80b75a3b6cffa2502fa04d928b749b72a4a
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
 
-PODFILE CHECKSUM: 104a1bce61951f09109dfd1eef4c0843fe35ba26
+PODFILE CHECKSUM: d90e8439948fcf11b82ce8dcd6964b0d6cc83134
 
 COCOAPODS: 1.0.0.beta.8
